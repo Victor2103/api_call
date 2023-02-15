@@ -9,13 +9,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-headers={"Authorization":f"Bearer {os.getenv('TOKEN')}"}
+headers = {"Authorization": f"Bearer {os.getenv('TOKEN')}"}
+
 
 def worker(thread_id):
     while True:
         with sync_playwright() as playwright:
             module.run(playwright)
         print("done")
+
 
 threads = []
 for i in range(5):
