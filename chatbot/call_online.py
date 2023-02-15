@@ -36,6 +36,8 @@ def run(playwright: Playwright) -> None:
     browser.close()
 
 
+"""
 for i in range(0, 100):
     with sync_playwright() as playwright:
         run(playwright)
+"""
