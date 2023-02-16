@@ -1,7 +1,4 @@
-import requests
 import os
-import random
-import string
 import threading
 import speech_to_text as module
 from playwright.sync_api import Playwright, sync_playwright
