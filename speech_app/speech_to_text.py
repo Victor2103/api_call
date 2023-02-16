@@ -17,7 +17,7 @@ def run(playwright: Playwright) -> None:
     while page.get_by_role("textbox").is_hidden():
         pass
     page.get_by_role("textbox").fill(
-        "https://www.youtube.com/watch?v=SaHsvUIgF7s")
+        "https://www.youtube.com/watch?v=4WEQtgnBu0I")
     page.get_by_role("textbox").press("Enter")
     # page.wait_for_timeout(60000)
     while page.get_by_role("button", name="Transcribe audio!").is_hidden():
